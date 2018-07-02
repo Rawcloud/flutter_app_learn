@@ -23,7 +23,7 @@ class FdemoState extends State<Fdemo> {
       ),
       floatingActionButton: new FloatingActionButton(
           onPressed: null,
-          child: new Icon(Icons.add),
+          child: new Icon(Icons.favorite),
         tooltip: '增加',
       ),
     );
