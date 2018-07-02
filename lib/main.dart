@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_learn/Fdemo.dart';
-import 'ShoppingList.dart';
-import './views/ShoppingListItem.dart';
+import 'package:flutter_app_learn/views/Fdemo.dart';
+import 'package:flutter_app_learn/views/ShoppingList.dart';
+import 'package:flutter_app_learn/components/ShoppingListItem.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {

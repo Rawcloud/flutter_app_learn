@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './views/ShoppingListItem.dart';
+import '../components/ShoppingListItem.dart';
 //使用material design 的应用实例，购物清单展示
 class ShoppingList extends StatefulWidget {
   ShoppingList({Key key, this.products}) : super(key: key);
