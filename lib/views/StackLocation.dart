@@ -40,12 +40,22 @@ class AlignDemo extends StatelessWidget {
         children: <Widget>[
           new Align(
             alignment: FractionalOffset(0.0, 0.0),
-            child: new Image.asset('images/1.jpg',),
+            child: new SizedBox(
+              width: 50.0,
+              height: 50.0,
+              child: new Image.asset('images/元宵.jpg',),
+            ),
           ),
           new Align(
             alignment: FractionalOffset.bottomRight,
             child: new Image.asset('images/flutter.png'),
-          )
+          ),
+          new Align(
+            alignment: FractionalOffset.center,
+            child: new AspectRatio(aspectRatio: 0.3/0.2,
+            child: new Image.asset('images/1.jpg'),
+            ),
+          ),
         ],
       ),
     );
