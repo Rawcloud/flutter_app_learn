@@ -3,6 +3,7 @@ import 'package:flutter_app_learn/views/Fdemo.dart';
 import 'package:flutter_app_learn/views/ShoppingList.dart';
 import 'package:flutter_app_learn/components/ShoppingListItem.dart';
 import 'package:flutter_app_learn/views/counter.dart';
+import 'package:flutter_app_learn/views/TextContainer.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -35,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
   @override
   // ignore: must_call_super
   void initState() {
-    controller = new TabController(length: 3, vsync: this);
+    controller = new TabController(length: 4, vsync: this);
   }
 
   @override
@@ -53,6 +54,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
             new Fdemo(),
             new ShoppingList(products: _kProducts),
             new Counter(),
+            new TextContainer(),
           ]
       ),
       bottomNavigationBar: new Material(
@@ -62,7 +64,8 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
             tabs: [
               new Tab(text: 'fdemo',icon: new Icon(Icons.alarm),),
               new Tab(text: 'scart',icon: new Icon(Icons.shop),),
-              new Tab(text: 'counter',icon: new Icon(Icons.collections),)
+              new Tab(text: 'counter',icon: new Icon(Icons.collections),),
+              new Tab(text: 'text',icon: new Icon(Icons.transform),),
             ]
         ),
       ),
