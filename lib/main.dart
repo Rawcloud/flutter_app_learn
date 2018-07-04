@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_learn/views/Fdemo.dart';
+//import 'package:flutter_app_learn/views/Fdemo.dart';
 import 'package:flutter_app_learn/views/ShoppingList.dart';
 import 'package:flutter_app_learn/components/ShoppingListItem.dart';
 import 'package:flutter_app_learn/views/counter.dart';
@@ -8,6 +8,7 @@ import 'package:flutter_app_learn/views/ImageDemo.dart';
 //import 'package:flutter_app_learn/views/LayoutDemo.dart';
 import 'package:flutter_app_learn/views/StackLocation.dart';
 //import 'package:flutter_app_learn/views/RollingBlock.dart';
+import 'views/PopupMenu.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -55,7 +56,8 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
       body: new TabBarView(
         controller: controller,
           children: [
-            new Fdemo(),
+//            new Fdemo(),
+            new PopupMenu(),
             new ShoppingList(products: _kProducts),
             new Counter(),
             //new TextContainer(),
