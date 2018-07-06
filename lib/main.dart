@@ -10,6 +10,9 @@ import 'package:flutter_app_learn/views/StackLocation.dart';
 //import 'package:flutter_app_learn/views/RollingBlock.dart';
 import 'views/PopupMenu.dart';
 import 'views/ReadAndWrite.dart';
+import 'views/ActionViewEcology.dart';
+import 'views/ScrollableTabs.dart';
+import 'views/MaterialCard.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -59,16 +62,19 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
           children: [
 //            new Fdemo(),
             new PopupMenu(),
-            new ShoppingList(products: _kProducts),
+            //new ShoppingList(products: _kProducts),
+            new MaterialCard(titlle: 'MaterialCard',),
 //            new Counter(),
             new ReadAndWrite(),
             //new TextContainer(),
-            new ImageFromAssest(),
+//            new ImageFromAssest(),
+            new ActionViewEcology(maximumEmergy: 100,maximumHunger: 100,maximumMood: 100,currentEmergy: 30,currentHunger: 65,currentMood: 80),
             //new HorizontalLayout(),
 //            new VerticalLayout(),
 //            new StackLocation(),
 //            new RollingBlock(),
-            new AlignDemo(),
+//            new AlignDemo(),
+            new ScrollableTabs(),
           ]
       ),
       bottomNavigationBar: new Material(
