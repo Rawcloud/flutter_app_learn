@@ -13,6 +13,8 @@ import 'views/ReadAndWrite.dart';
 import 'views/ActionViewEcology.dart';
 import 'views/ScrollableTabs.dart';
 import 'views/MaterialCard.dart';
+import 'views/achievement_view_list.dart';
+import 'components/achievement_view_list_item.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -39,6 +41,19 @@ final List<Product> _kProducts = <Product>[
   new Product(name: '其他'),
 ];
 
+final List<Target> _kTargets = <Target>[
+  new Target(name: '生存100天', reward: "金钱￥2500\t最高能量+20"),
+  new Target(name: '大学毕业', reward: "获得毕业学位\t金钱￥5000\t最高情绪+30"),
+  new Target(name: '获得￥5000', reward: "获得信用卡"),
+  new Target(name: '购买廉价的公寓', reward: "最高能量+60\t最高饥饿度+30"),
+  new Target(name: '购买普通的公寓', reward: "最高能量+80\t最高饥饿度+50"),
+  new Target(name: '生存100天', reward: "金钱￥2500\t最高能量+20"),
+  new Target(name: '大学毕业', reward: "获得毕业学位\t金钱￥5000\t最高情绪+30"),
+  new Target(name: '获得￥5000', reward: "获得信用卡"),
+  new Target(name: '购买廉价的公寓', reward: "最高能量+60\t最高饥饿度+30"),
+  new Target(name: '购买普通的公寓', reward: "最高能量+80\t最高饥饿度+50"),
+];
+
 class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateMixin {
   TabController controller;
 
@@ -61,7 +76,8 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
         controller: controller,
           children: [
 //            new Fdemo(),
-            new PopupMenu(),
+//            new PopupMenu(),
+            new AchievementViewList(targets: _kTargets,),
             //new ShoppingList(products: _kProducts),
             new MaterialCard(titlle: 'MaterialCard',),
 //            new Counter(),
