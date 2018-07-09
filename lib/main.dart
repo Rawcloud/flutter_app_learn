@@ -15,6 +15,8 @@ import 'views/ScrollableTabs.dart';
 import 'views/MaterialCard.dart';
 import 'views/achievement_view_list.dart';
 import 'components/achievement_view_list_item.dart';
+import 'views/test.dart';
+import 'views/DirectInput.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -81,10 +83,12 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
             //new ShoppingList(products: _kProducts),
             new MaterialCard(titlle: 'MaterialCard',),
 //            new Counter(),
-            new ReadAndWrite(),
+//            new ReadAndWrite(),
+            new ContainerWidget(),
             //new TextContainer(),
 //            new ImageFromAssest(),
-            new ActionViewEcology(maximumEmergy: 100,maximumHunger: 100,maximumMood: 100,currentEmergy: 30,currentHunger: 65,currentMood: 80),
+//            new ActionViewEcology(maximumEmergy: 100,maximumHunger: 100,maximumMood: 100,currentEmergy: 30,currentHunger: 65,currentMood: 80),
+            new DirectInput(),
             //new HorizontalLayout(),
 //            new VerticalLayout(),
 //            new StackLocation(),
